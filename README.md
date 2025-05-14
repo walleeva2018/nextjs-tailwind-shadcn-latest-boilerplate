@@ -1,5 +1,12 @@
 # NEXT js , Tailwind v4 , Shadcn boilerplate 
 
+[![GitHub Repo stars](https://img.shields.io/github/stars/walleeva2018/nextjs-tailwind-shadcn-latest-boilerplate?style=social)](https://github.com/walleeva2018/nextjs-tailwind-shadcn-latest-boilerplate)
+[![GitHub forks](https://img.shields.io/github/forks/walleeva2018/nextjs-tailwind-shadcn-latest-boilerplate?style=social)](https://github.com/walleeva2018/nextjs-tailwind-shadcn-latest-boilerplate)
+[![GitHub issues](https://img.shields.io/github/issues/walleeva2018/nextjs-tailwind-shadcn-latest-boilerplate)](https://github.com/walleeva2018/nextjs-tailwind-shadcn-latest-boilerplate/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/walleeva2018/nextjs-tailwind-shadcn-latest-boilerplate)](https://github.com/walleeva2018/nextjs-tailwind-shadcn-latest-boilerplate/pulls)
+
+[![MIT License](https://img.shields.io/github/license/walleeva2018/nextjs-tailwind-shadcn-latest-boilerplate)](LICENSE)
+
 A modern, high-performance frontend boilerplate built with Next.js 15, React 19, Tailwind CSS v4, and shadcn/ui components.
 
 ## Tech Stack
