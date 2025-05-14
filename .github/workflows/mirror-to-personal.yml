@@ -1,0 +1,30 @@
+name: Mirror to Personal Repository
+on:
+  push:
+    branches:
+      - main
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.MIRROR_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Mirror Action"
+          git config --global user.email "action@github.com"
+          
+      - name: Push to personal repository
+        run: |
+          git remote add personal git@github.com:walleeva2018/deploy-frontend.git
+          git push personal main:main --force
